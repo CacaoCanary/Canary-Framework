@@ -4,7 +4,7 @@ Canary 只做一件事：把与应用同寿命的对象连接起来，并运行�
 什么、不适合什么，以及与其他 Python 库的比较。
 
 下面对比表中的每一行都是实测结果，而非凭印象：
-[`benchmarks/comparison.py`](https://github.com/HotcocoaCanary/Canary-Framework/blob/main/benchmarks/comparison.py)
+[`benchmarks/comparison.py`](https://github.com/CacaoCanary/Canary-Framework/blob/main/benchmarks/comparison.py)
 用每个库搭建同一张小图并打印结果。可以自己运行：
 
 ```bash
@@ -100,5 +100,5 @@ async def get_book(book_id: int, repo: Annotated[BookRepository, Depends(books)]
 ```
 
 另一条路是让 Canary 来监听：FastAPI 应用交给 [`Server` 单元](extensions/server.md)服务，就不必
-手写 lifespan。[Canary-Framework-Example](https://github.com/HotcocoaCanary/Canary-Framework-Example)
+手写 lifespan。[Canary-Framework-Example](https://github.com/CacaoCanary/Canary-Framework-Example)
 的 `library` 项目（`--stack fastapi`）是这种写法的完整版本，含测试。

@@ -4,22 +4,22 @@
 Thank you for your interest in Canary Framework! Contributions of code, docs, tests, and
 bug reports are all welcome.
 
-提问请到 [Discussions · Q&A](https://github.com/HotcocoaCanary/Canary-Framework/discussions/categories/q-a)；
-新 API 或行为变化请先到 [Discussions · Ideas](https://github.com/HotcocoaCanary/Canary-Framework/discussions/categories/ideas)
-讨论，再写代码（见 [项目治理](https://github.com/HotcocoaCanary/Canary-Framework/blob/main/GOVERNANCE.md)）。
+提问请到 [Discussions · Q&A](https://github.com/CacaoCanary/Canary-Framework/discussions/categories/q-a)；
+新 API 或行为变化请先到 [Discussions · Ideas](https://github.com/CacaoCanary/Canary-Framework/discussions/categories/ideas)
+讨论，再写代码（见 [项目治理](https://github.com/CacaoCanary/Canary-Framework/blob/main/GOVERNANCE.md)）。
 Ask questions in Discussions · Q&A. Propose new APIs or behaviour changes in Discussions · Ideas
-before writing code (see [Governance](https://github.com/HotcocoaCanary/Canary-Framework/blob/main/GOVERNANCE.md)).
+before writing code (see [Governance](https://github.com/CacaoCanary/Canary-Framework/blob/main/GOVERNANCE.md)).
 
 ## 环境搭建 / Development setup
 
 ```bash
-git clone https://github.com/HotcocoaCanary/Canary-Framework.git
+git clone https://github.com/CacaoCanary/Canary-Framework.git
 cd Canary-Framework
 uv sync --all-extras
 uv run pre-commit install
 ```
 
-`examples/` 是 [Canary-Framework-Example](https://github.com/HotcocoaCanary/Canary-Framework-Example)
+`examples/` 是 [Canary-Framework-Example](https://github.com/CacaoCanary/Canary-Framework-Example)
 的子模块，需要时拉取 / `examples/` is a submodule; fetch it when needed:
 
 ```bash

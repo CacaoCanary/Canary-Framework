@@ -6,15 +6,15 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/HotcocoaCanary/Canary-Framework/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/HotcocoaCanary/Canary-Framework/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/CacaoCanary/Canary-Framework/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/CacaoCanary/Canary-Framework/actions/workflows/ci.yml/badge.svg"></a>
   <a href="https://pypi.org/project/canary-framework/"><img alt="PyPI" src="https://img.shields.io/pypi/v/canary-framework.svg"></a>
   <a href="https://pypi.org/project/canary-framework/"><img alt="Python" src="https://img.shields.io/pypi/pyversions/canary-framework.svg"></a>
-  <a href="https://github.com/HotcocoaCanary/Canary-Framework/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/pypi/l/canary-framework.svg"></a>
+  <a href="https://github.com/CacaoCanary/Canary-Framework/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/pypi/l/canary-framework.svg"></a>
 </p>
 
 <p align="center">
   <a href="README_ZH.md">中文</a> ·
-  <a href="https://hotcocoacanary.github.io/Canary-Framework/">Documentation</a> ·
+  <a href="https://cacaocanary.github.io/Canary-Framework/">Documentation</a> ·
   <a href="CHANGELOG.md">Changelog</a>
 </p>
 
@@ -127,10 +127,10 @@ Four optional packages sit beside the core. The core never imports them, so
 
 | Package | What it is | Install |
 |---|---|---|
-| [`canary_framework.test`](https://hotcocoacanary.github.io/Canary-Framework/extensions/test/) | `running()` and `unit()` — start a graph on test doubles | included |
-| [`canary_framework.config`](https://hotcocoacanary.github.io/Canary-Framework/extensions/config/) | `Settings` — a pydantic-settings model that is a unit | `canary-framework[config]` |
-| [`canary_framework.web.asgi.app`](https://hotcocoacanary.github.io/Canary-Framework/extensions/app/) | Application units — a small web framework whose application is itself an ASGI app, for any ASGI server | `canary-framework[app]` |
-| [`canary_framework.web.asgi.server`](https://hotcocoacanary.github.io/Canary-Framework/extensions/server/) | The server unit — listening is part of the lifecycle, and it serves any ASGI app | `canary-framework[server]` |
+| [`canary_framework.test`](https://cacaocanary.github.io/Canary-Framework/extensions/test/) | `running()` and `unit()` — start a graph on test doubles | included |
+| [`canary_framework.config`](https://cacaocanary.github.io/Canary-Framework/extensions/config/) | `Settings` — a pydantic-settings model that is a unit | `canary-framework[config]` |
+| [`canary_framework.web.asgi.app`](https://cacaocanary.github.io/Canary-Framework/extensions/app/) | Application units — a small web framework whose application is itself an ASGI app, for any ASGI server | `canary-framework[app]` |
+| [`canary_framework.web.asgi.server`](https://cacaocanary.github.io/Canary-Framework/extensions/server/) | The server unit — listening is part of the lifecycle, and it serves any ASGI app | `canary-framework[server]` |
 
 `canary-framework[web]` installs the last two together.
 
@@ -169,27 +169,27 @@ Extensions are provisional: their API may still change in a minor release.
 ## Stability
 
 1.0 is the first stable release. The public API follows
-[Semantic Versioning](https://hotcocoacanary.github.io/Canary-Framework/versioning/): no
+[Semantic Versioning](https://cacaocanary.github.io/Canary-Framework/versioning/): no
 breaking changes before 2.0, and removals are deprecated for at least one minor release first.
 
 ## Documentation
 
-- [Why Canary](https://hotcocoacanary.github.io/Canary-Framework/why-canary/) — where it fits,
+- [Why Canary](https://cacaocanary.github.io/Canary-Framework/why-canary/) — where it fits,
   where it does not, and a measured comparison with dishka, dependency-injector, injector and
   FastAPI `Depends`
-- [Documentation](https://hotcocoacanary.github.io/Canary-Framework/) —
-  [What's new in 1.3](https://hotcocoacanary.github.io/Canary-Framework/whats-new/),
-  [patterns](https://hotcocoacanary.github.io/Canary-Framework/patterns/),
-  [upgrading from 0.9.x](https://hotcocoacanary.github.io/Canary-Framework/upgrading-from-0.9/)
+- [Documentation](https://cacaocanary.github.io/Canary-Framework/) —
+  [What's new in 1.3](https://cacaocanary.github.io/Canary-Framework/whats-new/),
+  [patterns](https://cacaocanary.github.io/Canary-Framework/patterns/),
+  [upgrading from 0.9.x](https://cacaocanary.github.io/Canary-Framework/upgrading-from-0.9/)
 - Complete examples — five projects of deliberately different shapes, from an HTTP API to a
   long-running daemon:
-  [Canary-Framework-Example](https://github.com/HotcocoaCanary/Canary-Framework-Example)
+  [Canary-Framework-Example](https://github.com/CacaoCanary/Canary-Framework-Example)
   (checked out at [`examples/`](examples) as a submodule)
 
 ## Community
 
-Questions and ideas go to [Discussions](https://github.com/HotcocoaCanary/Canary-Framework/discussions),
-bugs to [Issues](https://github.com/HotcocoaCanary/Canary-Framework/issues). See
+Questions and ideas go to [Discussions](https://github.com/CacaoCanary/Canary-Framework/discussions),
+bugs to [Issues](https://github.com/CacaoCanary/Canary-Framework/issues). See
 [CONTRIBUTING](CONTRIBUTING.md), [GOVERNANCE](GOVERNANCE.md) and [SECURITY](SECURITY.md).
 
 ## License

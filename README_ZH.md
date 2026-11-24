@@ -6,15 +6,15 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/HotcocoaCanary/Canary-Framework/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/HotcocoaCanary/Canary-Framework/actions/workflows/ci.yml/badge.svg"></a>
+  <a href="https://github.com/CacaoCanary/Canary-Framework/actions/workflows/ci.yml"><img alt="CI" src="https://github.com/CacaoCanary/Canary-Framework/actions/workflows/ci.yml/badge.svg"></a>
   <a href="https://pypi.org/project/canary-framework/"><img alt="PyPI" src="https://img.shields.io/pypi/v/canary-framework.svg"></a>
   <a href="https://pypi.org/project/canary-framework/"><img alt="Python" src="https://img.shields.io/pypi/pyversions/canary-framework.svg"></a>
-  <a href="https://github.com/HotcocoaCanary/Canary-Framework/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/pypi/l/canary-framework.svg"></a>
+  <a href="https://github.com/CacaoCanary/Canary-Framework/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/pypi/l/canary-framework.svg"></a>
 </p>
 
 <p align="center">
   <a href="README.md">English</a> ·
-  <a href="https://hotcocoacanary.github.io/Canary-Framework/">文档</a> ·
+  <a href="https://cacaocanary.github.io/Canary-Framework/">文档</a> ·
   <a href="CHANGELOG.md">变更日志</a>
 </p>
 
@@ -120,10 +120,10 @@ app = FastAPI(lifespan=lifespan)
 
 | 包 | 内容 | 安装 |
 |---|---|---|
-| [`canary_framework.test`](https://hotcocoacanary.github.io/Canary-Framework/zh/extensions/test/) | `running()` 与 `unit()`：带替身启动一张图 | 已包含 |
-| [`canary_framework.config`](https://hotcocoacanary.github.io/Canary-Framework/zh/extensions/config/) | `Settings`：同时是单元的 pydantic-settings 模型 | `canary-framework[config]` |
-| [`canary_framework.web.asgi.app`](https://hotcocoacanary.github.io/Canary-Framework/zh/extensions/app/) | 应用单元：一个小型 Web 框架，应用自己就是 ASGI 应用，可交给任何 ASGI 服务器 | `canary-framework[app]` |
-| [`canary_framework.web.asgi.server`](https://hotcocoacanary.github.io/Canary-Framework/zh/extensions/server/) | 服务器单元：监听是生命周期的一部分，服务任何 ASGI 应用 | `canary-framework[server]` |
+| [`canary_framework.test`](https://cacaocanary.github.io/Canary-Framework/zh/extensions/test/) | `running()` 与 `unit()`：带替身启动一张图 | 已包含 |
+| [`canary_framework.config`](https://cacaocanary.github.io/Canary-Framework/zh/extensions/config/) | `Settings`：同时是单元的 pydantic-settings 模型 | `canary-framework[config]` |
+| [`canary_framework.web.asgi.app`](https://cacaocanary.github.io/Canary-Framework/zh/extensions/app/) | 应用单元：一个小型 Web 框架，应用自己就是 ASGI 应用，可交给任何 ASGI 服务器 | `canary-framework[app]` |
+| [`canary_framework.web.asgi.server`](https://cacaocanary.github.io/Canary-Framework/zh/extensions/server/) | 服务器单元：监听是生命周期的一部分，服务任何 ASGI 应用 | `canary-framework[server]` |
 
 `canary-framework[web]` 同时安装后两者。
 
@@ -162,25 +162,25 @@ async with Gateway():  # 依赖先启动，然后开始监听
 ## 稳定性
 
 1.0 是第一个稳定版本。公开 API 遵循
-[语义化版本](https://hotcocoacanary.github.io/Canary-Framework/zh/versioning/)：2.0 之前不做
+[语义化版本](https://cacaocanary.github.io/Canary-Framework/zh/versioning/)：2.0 之前不做
 破坏性变更，任何移除都至少提前一个次版本弃用。
 
 ## 文档
 
-- [为什么选 Canary](https://hotcocoacanary.github.io/Canary-Framework/zh/why-canary/)——适合与不适合的
+- [为什么选 Canary](https://cacaocanary.github.io/Canary-Framework/zh/why-canary/)——适合与不适合的
   场景，以及与 dishka、dependency-injector、injector、FastAPI `Depends` 的实测对比
-- [文档站](https://hotcocoacanary.github.io/Canary-Framework/zh/)——
-  [1.3 新特性](https://hotcocoacanary.github.io/Canary-Framework/zh/whats-new/)、
-  [常见用法](https://hotcocoacanary.github.io/Canary-Framework/zh/patterns/)、
-  [从 0.9.x 升级](https://hotcocoacanary.github.io/Canary-Framework/zh/upgrading-from-0.9/)
+- [文档站](https://cacaocanary.github.io/Canary-Framework/zh/)——
+  [1.3 新特性](https://cacaocanary.github.io/Canary-Framework/zh/whats-new/)、
+  [常见用法](https://cacaocanary.github.io/Canary-Framework/zh/patterns/)、
+  [从 0.9.x 升级](https://cacaocanary.github.io/Canary-Framework/zh/upgrading-from-0.9/)
 - 完整示例——五个形态刻意不同的项目，从 HTTP API 到常驻守护进程：
-  [Canary-Framework-Example](https://github.com/HotcocoaCanary/Canary-Framework-Example)
+  [Canary-Framework-Example](https://github.com/CacaoCanary/Canary-Framework-Example)
   （以子模块挂在 [`examples/`](examples)）
 
 ## 社区
 
-提问与想法请到 [Discussions](https://github.com/HotcocoaCanary/Canary-Framework/discussions)，
-bug 请提 [Issues](https://github.com/HotcocoaCanary/Canary-Framework/issues)。另见
+提问与想法请到 [Discussions](https://github.com/CacaoCanary/Canary-Framework/discussions)，
+bug 请提 [Issues](https://github.com/CacaoCanary/Canary-Framework/issues)。另见
 [贡献指南](CONTRIBUTING.md)、[项目治理](GOVERNANCE.md) 与 [安全策略](SECURITY.md)。
 
 ## 许可证

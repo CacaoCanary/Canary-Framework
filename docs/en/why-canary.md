@@ -5,7 +5,7 @@ and shutdown. This page says where that fits, where it does not, and how it comp
 Python libraries.
 
 Every row in the comparison below is measured, not recalled:
-[`benchmarks/comparison.py`](https://github.com/HotcocoaCanary/Canary-Framework/blob/main/benchmarks/comparison.py)
+[`benchmarks/comparison.py`](https://github.com/CacaoCanary/Canary-Framework/blob/main/benchmarks/comparison.py)
 builds the same small graph with each library and prints the results. Run it yourself:
 
 ```bash
@@ -111,5 +111,5 @@ async def get_book(book_id: int, repo: Annotated[BookRepository, Depends(books)]
 
 The other way round, Canary does the listening: hand the FastAPI application to the
 [`Server` unit](extensions/server.md) and no lifespan needs writing. The `library` project in
-[Canary-Framework-Example](https://github.com/HotcocoaCanary/Canary-Framework-Example)
+[Canary-Framework-Example](https://github.com/CacaoCanary/Canary-Framework-Example)
 (`--stack fastapi`) is a complete version of that, with tests.

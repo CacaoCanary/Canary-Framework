@@ -68,4 +68,4 @@ class Gateway(Server):
 
 - [为什么选 Canary](why-canary.md) 用 1.2.0 重新实测，Canary 一列结果不变。
 - 完整清单见
-  [变更日志](https://github.com/HotcocoaCanary/Canary-Framework/blob/main/CHANGELOG.md)。
+  [变更日志](https://github.com/CacaoCanary/Canary-Framework/blob/main/CHANGELOG.md)。

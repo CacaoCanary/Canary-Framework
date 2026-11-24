@@ -43,10 +43,10 @@ name = "张文博 (Canary)"
 email = "Cacao.Canary@outlook.com"
 
 [project.urls]
-Repository = "https://github.com/HotcocoaCanary/Canary-Framework"
-Documentation = "https://hotcocoacanary.github.io/Canary-Framework/"
-Issues = "https://github.com/HotcocoaCanary/Canary-Framework/issues"
-Changelog = "https://github.com/HotcocoaCanary/Canary-Framework/blob/main/CHANGELOG.md"
+Repository = "https://github.com/CacaoCanary/Canary-Framework"
+Documentation = "https://cacaocanary.github.io/Canary-Framework/"
+Issues = "https://github.com/CacaoCanary/Canary-Framework/issues"
+Changelog = "https://github.com/CacaoCanary/Canary-Framework/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
 # 扩展包的第三方依赖。核心（canary_framework.core）与 canary_framework.test 不需要任何一项。

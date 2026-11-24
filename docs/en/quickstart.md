@@ -96,7 +96,7 @@ phase.
 
 ## Complete examples
 
-[Canary-Framework-Example](https://github.com/HotcocoaCanary/Canary-Framework-Example) holds five
+[Canary-Framework-Example](https://github.com/CacaoCanary/Canary-Framework-Example) holds five
 projects, deliberately different in shape. It is also checked out at `examples/` as a
 submodule of this repository.
 
@@ -112,7 +112,7 @@ The projects with a web service write their HTTP layer twice — once as
 business code.
 
 ```bash
-git clone https://github.com/HotcocoaCanary/Canary-Framework-Example.git
+git clone https://github.com/CacaoCanary/Canary-Framework-Example.git
 cd Canary-Framework-Example/library
 uv sync && uv run pytest && uv run python main.py
 ```

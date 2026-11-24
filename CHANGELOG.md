@@ -8,7 +8,7 @@ This project follows Keep a Changelog and Semantic Versioning.
 
 Application units get WebSocket endpoints, written beside HTTP endpoints and bound the same
 way. Existing code needs no changes. See
-[What's New in 1.3](https://hotcocoacanary.github.io/Canary-Framework/whats-new/).
+[What's New in 1.3](https://cacaocanary.github.io/Canary-Framework/whats-new/).
 
 应用单元支持 WebSocket 接口，和 HTTP 接口写在一起、按同样的方式绑定。已有代码不需要改动。
 
@@ -60,7 +60,7 @@ way. Existing code needs no changes. See
 Four extension packages arrive beside the core — testing helpers, configuration, and the two
 sides of ASGI as units — all provisional for now. The core has two fixes; one changes what a
 subclass overriding a dependency by name does. See
-[What's New in 1.2](https://hotcocoacanary.github.io/Canary-Framework/whats-new-1.2/).
+[What's New in 1.2](https://cacaocanary.github.io/Canary-Framework/whats-new-1.2/).
 
 核心旁边新增四个扩展包：测试辅助、配置，以及各站 ASGI 协议一侧的应用单元与服务器单元，目前
 均为暂行 API。核心有两处修正，其中一处改变了子类同名覆盖一条依赖时的行为。
@@ -199,7 +199,7 @@ subclass overriding a dependency by name does. See
 The engine now runs on an explicit dependency graph, and `stop()` is a unit action. Two changes
 break code that used the engine directly — `advance()` / `unwind()` are renamed, and `stop()` on
 a unit still in use now does nothing — see
-[What's New in 1.1](https://hotcocoacanary.github.io/Canary-Framework/whats-new-1.1/). `init()`,
+[What's New in 1.1](https://cacaocanary.github.io/Canary-Framework/whats-new-1.1/). `init()`,
 `start()`, `stop()` and `async with` keep working as before.
 
 引擎改为基于显式依赖图，`stop()` 成为单元的动作。两处破坏性变更只影响直接使用引擎的代码：
@@ -208,7 +208,7 @@ a unit still in use now does nothing — see
 ### Changed
 
 - **BREAKING: the engine functions are renamed**, for phases of your own
-  ([#27](https://github.com/HotcocoaCanary/Canary-Framework/issues/27)).
+  ([#27](https://github.com/CacaoCanary/Canary-Framework/issues/27)).
   `init()`, `start()`, `stop()` and `async with` are unchanged — they are these functions:
 
   | Before | Now |
@@ -224,7 +224,7 @@ a unit still in use now does nothing — see
   `leave(unit, migrate)`。`leave()` 与 `stop()` 规则相同，离开钩子失败时抛 `ExceptionGroup`。
 
 The engine now runs on an explicit dependency graph, built when a unit is first entered
-([#25](https://github.com/HotcocoaCanary/Canary-Framework/issues/25)):
+([#25](https://github.com/CacaoCanary/Canary-Framework/issues/25)):
 
 - **`stop()` is a unit action.** It stops the unit unless a dependent is starting, running or
   stopping, then tries each of its dependencies the same way. On the root that is the whole
@@ -244,7 +244,7 @@ The engine now runs on an explicit dependency graph, built when a unit is first 
 - Entering no longer recurses, so no call-stack trampolining is needed for deep chains.
 - `Scope`'s inspection attributes change shape: `phases`, `entered`, `releasing` and `stopping`
   give way to `tracks` — each unit's explicit state in each phase — and the method
-  `entered(phase)` ([#28](https://github.com/HotcocoaCanary/Canary-Framework/issues/28)). These
+  `entered(phase)` ([#28](https://github.com/CacaoCanary/Canary-Framework/issues/28)). These
   attributes are outside the compatibility promise.
 
   引擎改为基于显式依赖图：`stop()` 成为单元的动作，先停本单元（仍被使用时跳过），再递归尝试
@@ -255,7 +255,7 @@ The engine now runs on an explicit dependency graph, built when a unit is first 
 ### Added
 
 - Python 3.15 support: tested in CI and listed in the classifiers.
-  ([#21](https://github.com/HotcocoaCanary/Canary-Framework/issues/21))
+  ([#21](https://github.com/CacaoCanary/Canary-Framework/issues/21))
 - `Phase(..., leave=...)` names the phase whose hooks run when this one is left; `start`'s is
   `stop`. `leave()` runs them, and a unit that fails or is cancelled while entering runs them at
   once.
@@ -274,7 +274,7 @@ The engine now runs on an explicit dependency graph, built when a unit is first 
 ### Fixed
 
 Found by the new randomised lifecycle tests
-([#20](https://github.com/HotcocoaCanary/Canary-Framework/issues/20)):
+([#20](https://github.com/CacaoCanary/Canary-Framework/issues/20)):
 
 - A dependency that fails while reached through two paths in one `start()` is no longer run a
   second time. Since 1.0.0 a failed unit forgot its failure immediately, so a concurrent path
@@ -295,7 +295,7 @@ Found by the new randomised lifecycle tests
 - New page: Why Canary — where it fits and where it does not, and a comparison with dishka,
   dependency-injector, injector and FastAPI `Depends`. Every row is measured by
   `benchmarks/comparison.py`, which anyone can run with `uv run benchmarks/comparison.py`.
-  ([#13](https://github.com/HotcocoaCanary/Canary-Framework/issues/13))
+  ([#13](https://github.com/CacaoCanary/Canary-Framework/issues/13))
 
   新增「为什么选 Canary」：适合与不适合的场景，以及实测对比；每一行都可用
   `uv run benchmarks/comparison.py` 复现。
@@ -306,7 +306,7 @@ Found by the new randomised lifecycle tests
 
 - The internal packages are renamed: `canary_framework.core.declare` → `core.meta`, and
   `canary_framework.core.runtime` → `core.flow`. Both sit outside the
-  [public API](https://hotcocoacanary.github.io/Canary-Framework/versioning/#public-api) —
+  [public API](https://cacaocanary.github.io/Canary-Framework/versioning/#public-api) —
   everything exported from `canary_framework` is unchanged. Code importing these modules
   directly must update its imports.
 
@@ -318,14 +318,14 @@ Found by the new randomised lifecycle tests
 - `stop()` called while `start()` is still running waits for it to finish before reclaiming.
   It used to run `@stop` first; the in-flight `@start` then acquired its resource after
   reclamation, and nothing released it. The same applies to `unwind()` for any phase.
-  ([#10](https://github.com/HotcocoaCanary/Canary-Framework/issues/10))
+  ([#10](https://github.com/CacaoCanary/Canary-Framework/issues/10))
 
   `start()` 仍在进行时调用 `stop()`，会先等它结束再回收，不再泄漏在回收之后才获取的资源。
 
 ### Documentation
 
 - Patterns: blocking work in hooks (`asyncio.to_thread`), and bounding shutdown with
-  `asyncio.timeout`. ([#11](https://github.com/HotcocoaCanary/Canary-Framework/issues/11))
+  `asyncio.timeout`. ([#11](https://github.com/CacaoCanary/Canary-Framework/issues/11))
 
   常见用法：钩子里的阻塞操作与限时关闭。
 
@@ -340,11 +340,11 @@ Found by the new randomised lifecycle tests
 ### Examples
 
 - `examples/` is now a submodule of
-  [Canary-Framework-Example](https://github.com/HotcocoaCanary/Canary-Framework-Example) — a
+  [Canary-Framework-Example](https://github.com/CacaoCanary/Canary-Framework-Example) — a
   FastAPI service with RAG and a long-running telemetry daemon, both on 1.0 — replacing the
   in-repository library example. Run `git submodule update --init` to fetch it. An existing
   clone that still has the old `examples/` files may need them removed before switching to a
-  branch with the submodule. ([#12](https://github.com/HotcocoaCanary/Canary-Framework/issues/12))
+  branch with the submodule. ([#12](https://github.com/CacaoCanary/Canary-Framework/issues/12))
 
   `examples/` 改为 Canary-Framework-Example 子模块（FastAPI + RAG 服务与常驻遥测守护进程）。
   用 `git submodule update --init` 拉取；旧 clone 若残留原 `examples/` 文件，切换分支前需先删除。
@@ -354,14 +354,14 @@ Found by the new randomised lifecycle tests
 The first stable release. The core introduced in 0.10 is kept; from here on the public API
 follows Semantic Versioning — no breaking changes before 2.0, and removals are deprecated for at
 least one minor release first. See the
-[versioning policy](https://hotcocoacanary.github.io/Canary-Framework/versioning/).
+[versioning policy](https://cacaocanary.github.io/Canary-Framework/versioning/).
 
 第一个稳定版本，沿用 0.10 引入的核心。自此公开 API 遵循语义化版本：2.0 之前不做破坏性变更，
 任何移除都至少提前一个次版本弃用。
 
 Upgrading from 0.10: replace `service.dep = Fake()` with `scope_of(service).provide(Dep, Fake())`,
 and iterate `scope.entered[phase].values()`. Upgrading from 0.9.x: see
-[Upgrading from 0.9.x](https://hotcocoacanary.github.io/Canary-Framework/upgrading-from-0.9/).
+[Upgrading from 0.9.x](https://cacaocanary.github.io/Canary-Framework/upgrading-from-0.9/).
 
 ### Added
 

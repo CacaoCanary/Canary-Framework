@@ -3,8 +3,8 @@ site_description: Dependency injection and lifecycle for plain Python classes, w
 site_author: 张文博 (Canary)
 copyright: Copyright &copy; 2026 张文博 (Canary)
 
-repo_url: https://github.com/HotcocoaCanary/Canary-Framework
-repo_name: HotcocoaCanary/Canary-Framework
+repo_url: https://github.com/CacaoCanary/Canary-Framework
+repo_name: CacaoCanary/Canary-Framework
 edit_uri: edit/main/docs/
 
 theme:
@@ -128,9 +128,9 @@ nav:
   - Project:
       - Contributing: contributing.md
       - Governance: governance.md
-      - Changelog: https://github.com/HotcocoaCanary/Canary-Framework/blob/main/CHANGELOG.md
+      - Changelog: https://github.com/CacaoCanary/Canary-Framework/blob/main/CHANGELOG.md
 
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/HotcocoaCanary/Canary-Framework
+      link: https://github.com/CacaoCanary/Canary-Framework
