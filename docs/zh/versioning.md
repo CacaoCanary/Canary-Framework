@@ -58,5 +58,5 @@ Python 版本可能在次版本中停止支持，并在变更日志中说明。
 ## 发布
 
 发布由在 `main` 上推送 `vX.Y.Z` tag 触发。每个版本的说明取自
-[变更日志](https://github.com/HotcocoaCanary/Canary-Framework/blob/main/CHANGELOG.md)中对应的
+[变更日志](https://github.com/CacaoCanary/Canary-Framework/blob/main/CHANGELOG.md)中对应的
 一节，后附已合并的 PR 列表。

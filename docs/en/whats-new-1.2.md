@@ -103,4 +103,4 @@ table, from which writing one takes a few dozen lines; see
   extra holds only what the core's tests need; CI also runs the core's tests in an
   environment without those dependencies.
 - The full list is in the
-  [changelog](https://github.com/HotcocoaCanary/Canary-Framework/blob/main/CHANGELOG.md).
+  [changelog](https://github.com/CacaoCanary/Canary-Framework/blob/main/CHANGELOG.md).

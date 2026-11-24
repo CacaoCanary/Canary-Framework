@@ -66,5 +66,5 @@ says so.
 ## Releases
 
 Releases are cut from `main` by pushing a `vX.Y.Z` tag. The notes for each release are the
-matching section of the [changelog](https://github.com/HotcocoaCanary/Canary-Framework/blob/main/CHANGELOG.md),
+matching section of the [changelog](https://github.com/CacaoCanary/Canary-Framework/blob/main/CHANGELOG.md),
 followed by the list of merged pull requests.

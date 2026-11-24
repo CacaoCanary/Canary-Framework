@@ -93,4 +93,4 @@ async with running(Gateway, {AppConfig: AppConfig(greeting="hi")}) as gateway:
 - 开发环境：`dev` extra 现在包含扩展包的依赖，新增只含核心测试所需的 `test`；CI 另在没有这些
   依赖的环境里跑核心测试。
 - 完整清单见
-  [变更日志](https://github.com/HotcocoaCanary/Canary-Framework/blob/main/CHANGELOG.md)。
+  [变更日志](https://github.com/CacaoCanary/Canary-Framework/blob/main/CHANGELOG.md)。

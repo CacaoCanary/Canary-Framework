@@ -74,4 +74,4 @@ These show only once you use WebSocket:
 
 - [Why Canary](why-canary.md) is re-measured with 1.2.0; the Canary column is unchanged.
 - The full list is in the
-  [changelog](https://github.com/HotcocoaCanary/Canary-Framework/blob/main/CHANGELOG.md).
+  [changelog](https://github.com/CacaoCanary/Canary-Framework/blob/main/CHANGELOG.md).

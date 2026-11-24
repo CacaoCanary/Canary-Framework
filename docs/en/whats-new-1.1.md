@@ -81,6 +81,6 @@ await root.right.stop()     # right, then Shared
 - `Scope.key_of(unit)`, `Scope.entered(phase)`, and `Scope.graph` / `Scope.dependents` /
   `Scope.tracks` for inspecting the graph and each unit's state.
 - Three engine bugs found by the new randomised lifecycle tests are fixed; see the
-  [changelog](https://github.com/HotcocoaCanary/Canary-Framework/blob/main/CHANGELOG.md).
+  [changelog](https://github.com/CacaoCanary/Canary-Framework/blob/main/CHANGELOG.md).
 - [Why Canary](why-canary.md): where the framework fits, where it does not, and a measured
   comparison with dishka, dependency-injector, injector and FastAPI `Depends`.

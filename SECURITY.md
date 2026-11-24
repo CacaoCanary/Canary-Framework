@@ -8,14 +8,14 @@ If you discover a security vulnerability, please do **not** open a public issue.
 Report it privately via either of:
 
 - 发送邮件至 / Email: **Cacao.Canary@outlook.com**
-- 或在 GitHub 上通过 [私有安全报告 / Private security advisory](https://github.com/HotcocoaCanary/Canary-Framework/security/advisories/new) 提交
+- 或在 GitHub 上通过 [私有安全报告 / Private security advisory](https://github.com/CacaoCanary/Canary-Framework/security/advisories/new) 提交
 
 ## 支持的版本 / Supported Versions
 
 仅**最新版本**接受安全修复；所有历史版本均视为停止维护。
 
 Only the **latest release** receives security fixes; every older version is end-of-life.
-See [Versioning & Compatibility](https://hotcocoacanary.github.io/Canary-Framework/versioning/).
+See [Versioning & Compatibility](https://cacaocanary.github.io/Canary-Framework/versioning/).
 
 | 版本 / Version  | 支持状态 / Status          |
 | --------------- | -------------------------- |

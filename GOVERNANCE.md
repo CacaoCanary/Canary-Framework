@@ -2,7 +2,7 @@
 
 ## 角色 / Roles
 
-**维护者 / Maintainer** — [@HotcocoaCanary](https://github.com/HotcocoaCanary)（张文博）。
+**维护者 / Maintainer** — [@CacaoCanary](https://github.com/CacaoCanary)（张文博）。
 负责审查与合并 PR、发布版本、决定 API 与路线。
 Reviews and merges pull requests, cuts releases, and decides on API and direction.
 
@@ -18,7 +18,7 @@ contributions may be invited to co-maintain; this document will be updated when 
 
 - **日常改动** 通过 PR 完成，由维护者审查合并。
   Everyday changes go through pull requests reviewed and merged by the maintainer.
-- **新 API 或行为变化** 先在 [Discussions · Ideas](https://github.com/HotcocoaCanary/Canary-Framework/discussions/categories/ideas)
+- **新 API 或行为变化** 先在 [Discussions · Ideas](https://github.com/CacaoCanary/Canary-Framework/discussions/categories/ideas)
   或 issue 中讨论，达成一致后再写代码。
   New APIs or behaviour changes are discussed first in Discussions · Ideas or an issue, and
   coded once agreed.
@@ -35,20 +35,20 @@ The core stays minimal: `Canary`, `dep()` and phases. Before anything enters the
    Can it be built from the existing API inside a unit? If so, it becomes a documented pattern,
    not a new API.
 2. **是否改变现有用法？** 1.x 内不做破坏性变更，见
-   [版本与兼容性](https://hotcocoacanary.github.io/Canary-Framework/versioning/)。
+   [版本与兼容性](https://cacaocanary.github.io/Canary-Framework/versioning/)。
    Does it change existing usage? 1.x makes no breaking changes; see
-   [Versioning](https://hotcocoacanary.github.io/Canary-Framework/versioning/).
+   [Versioning](https://cacaocanary.github.io/Canary-Framework/versioning/).
 3. **是否引入第三方依赖？** 核心保持零依赖；集成放在独立的包里。
    Does it add a third-party dependency? The core stays dependency-free; integrations live in
    separate packages.
 
 ## 路线 / Roadmap
 
-计划中的工作以 [Milestones](https://github.com/HotcocoaCanary/Canary-Framework/milestones)
+计划中的工作以 [Milestones](https://github.com/CacaoCanary/Canary-Framework/milestones)
 跟踪，方向性的讨论在 Discussions 进行。
 Planned work is tracked as Milestones; direction is discussed in Discussions.
 
 ## 行为准则 / Code of Conduct
 
-所有参与者须遵守 [行为准则](https://github.com/HotcocoaCanary/Canary-Framework/blob/main/CODE_OF_CONDUCT.md)。
-Everyone taking part is expected to follow the [Code of Conduct](https://github.com/HotcocoaCanary/Canary-Framework/blob/main/CODE_OF_CONDUCT.md).
+所有参与者须遵守 [行为准则](https://github.com/CacaoCanary/Canary-Framework/blob/main/CODE_OF_CONDUCT.md)。
+Everyone taking part is expected to follow the [Code of Conduct](https://github.com/CacaoCanary/Canary-Framework/blob/main/CODE_OF_CONDUCT.md).

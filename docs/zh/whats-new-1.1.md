@@ -74,6 +74,6 @@ await root.right.stop()     # right，然后 Shared
 - `Scope.key_of(unit)`、`Scope.entered(phase)`，以及用于观察依赖图和单元状态的
   `Scope.graph` / `Scope.dependents` / `Scope.tracks`。
 - 随机化生命周期测试发现的三处引擎缺陷已修复，见
-  [变更日志](https://github.com/HotcocoaCanary/Canary-Framework/blob/main/CHANGELOG.md)。
+  [变更日志](https://github.com/CacaoCanary/Canary-Framework/blob/main/CHANGELOG.md)。
 - [为什么选 Canary](why-canary.md)：适合与不适合的场景，以及与 dishka、dependency-injector、
   injector、FastAPI `Depends` 的实测对比。
